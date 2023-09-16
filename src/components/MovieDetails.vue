@@ -1,6 +1,8 @@
 <template>
     <div v-if="movie" class="z-40 text-white w-[53%] pt-20">
-        <div class="text-[55px] font-semibold font-serif">{{ movie.name }}</div>
+        <Header/>
+
+        <div class="text-[30px] font-semibold font-serif">{{ movie.name }}</div>
         <div class="flex items-center text-lg pt-4">
             <div>{{ movie.year }}</div>
             <div class="relative">
@@ -21,5 +23,6 @@
 </template>
 
 <script setup>
+import Header from './Header.vue';
     defineProps({ movie: Object })
 </script>

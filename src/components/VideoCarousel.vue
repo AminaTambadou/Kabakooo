@@ -5,7 +5,6 @@
                 {{ category }}
             </div>
         </div>
-
         <Carousel 
             ref="carousel" 
             v-model="currentSlide"
@@ -21,6 +20,7 @@
                 :key="slide" 
                 class="flex items-center object-cover text-white bg-transparent"
             >
+
                 <div 
                     @click="fullScreenVideo(index)"
                     class="object-cover h-[100%] hover:brightness-125 cursor-pointer" 
